@@ -40,6 +40,7 @@ import {
       ])
     ]),
     
+    
       ] //& Todo el apartado de animaciones
     
     })
