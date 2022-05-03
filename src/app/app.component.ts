@@ -39,6 +39,33 @@ import {
         )]) 
       ])
     ]),
+
+
+    trigger('animacionHijo', [ //* Segundo trigger para otras animaciones 
+      transition('* <=> *', [
+      query(
+        ':enter, :leave',
+        [style({ position: 'fixed', width:'100%'  })],
+        { optional: true }
+      ),
+     group([query( 
+        ':leave',
+         [style({ }), 
+          animate('0.5s ease-in-out', 
+          style({  }))],
+        { optional: true }
+      ),
+      query(
+        ':enter',
+        [style({  }),
+           animate('0.5s ease-in-out', 
+           style({  }))
+          ],
+        { optional: true }
+      )]) 
+    ])
+
+    ])
     
       ] //& Todo el apartado de animaciones
     
