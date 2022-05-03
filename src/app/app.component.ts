@@ -51,8 +51,8 @@ import {
      group([query( 
         ':leave',
          [style({ }), 
-          animate('0.5s ease-in-out', 
-          style({  }))],
+          animate('0.5s ease-in-out',  //* Lista de aniaciones que se pueden hacer (?)
+          style({  }))], //* Sin style para poder diferenciar la animacion
         { optional: true }
       ),
       query(
